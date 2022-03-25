@@ -361,7 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"🗂️{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/+eyLC_ZNoehZhOWI1')
+                InlineKeyboardButton('💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨', url='https://t.me/Movies_updates_MT')
             ]
             ]
             
@@ -954,14 +954,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="𝙉𝙀𝙓𝙏 ⫸", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+eyLC_ZNoehZhOWI1")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/Movies_updates_MT")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="💠 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/+eyLC_ZNoehZhOWI1")]
+            [InlineKeyboardButton(text="💫 𝙐𝙥𝙙𝙖𝙩𝙚𝙨",url="https://t.me/Movies_updates_MT")]
         )
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
@@ -999,7 +999,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/+eyLC_ZNoehZhOWI1'>Anjalina Updates</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
+        cap = f"<b>🎬 Title:</b> {search}\n</b>\n<b><a href='https://t.me/Movies_updates_MT'>OTT Updates</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 10 minutes to avoid copyright issues.</s>"
     if imdb and imdb.get('poster'):
         try:
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024], reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
@@ -1015,12 +1015,12 @@ async def auto_filter(client, msg, spoll=False):
             await message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="https://telegra.ph/file/82b5bbbab6d5e5593b6b2.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo(photo="https://telegra.ph/file/87215ff6fd1e9390ba8f4.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await fek.delete()
             await msg.delete()
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/87215ff6fd1e9390ba8f4.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
         await fuk.delete()
         await msg.delete()

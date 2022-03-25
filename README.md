@@ -1,13 +1,12 @@
 # Movie Bot
 Very Sempil Bot Auto Filter bot
-##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+Movie-Bot!;created+by+Dhashamoolam+Dhamu!;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
-</p>
+
 # 𝐂𝐋𝐈𝐂𝐊 𝐁𝐄𝐋𝐎𝐖 𝐈𝐌𝐀𝐆𝐄 𝐓𝐎 𝐃𝐄𝐏𝐋𝐎𝐘👇👇👇
 
 
 
 
-[![Deploy](https://telegra.ph/file/d053a8e9ef4ed93df38a0.jpg)](https://heroku.com/deploy?template=https://telegram.dog/XTZ_HerokuBot?start=Y2NhZG1pbjEvTW92aWUtQm90IG1hc3Rlcg)
+[![Deploy](https://telegra.ph/file/d053a8e9ef4ed93df38a0.jpg)](https://heroku.com/deploy?template=https://github.com/LegacyOO7/Movie-search-TG)
 
 ## Features
 
